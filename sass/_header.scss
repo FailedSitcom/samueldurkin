@@ -1,0 +1,58 @@
+.site-header {
+  @include outer-container;
+}
+
+.site-description, .site-title {
+  margin-bottom: 0;
+}
+
+.menu-button {
+
+  a {
+    font-weight: 300;
+    padding: 0.6em 1.5em 0.6em 0;
+    border-radius: 0.3em 0.3em 0 0;
+    margin: 0 1em 0 0;
+    font-size: 1.2em;
+
+
+
+    @include media($mobile) {
+      padding: 0.4em 0.4em 0.4em 0;
+      margin: 0 0.5em 0 0;
+      border-radius: 0.4em 0.4em 0 0;
+    }
+
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:hover > .current-menu-item {
+    text-decoration: none;
+  }
+
+}
+
+.current-menu-item a {
+
+    text-decoration: underline;
+
+}
+
+.site-description {
+  font-weight: 300;
+  margin: 0;
+  font-size: 1.777em;
+  @include media($tablet) {
+    font-size: 1.536em;
+  }
+  @include media($mobile) {
+    font-size: 1.44em;
+  }
+}
+
+.main-navigation {
+  border-bottom: 0.15em solid $black;
+}

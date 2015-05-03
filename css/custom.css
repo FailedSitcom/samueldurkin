@@ -1,0 +1,275 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: #C1EAB6; }
+
+.entry-title {
+  border-bottom: 0.075em solid #04080F; }
+
+.site-header {
+  max-width: 57.5em;
+  margin-left: auto;
+  margin-right: auto; }
+  .site-header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.site-description, .site-title {
+  margin-bottom: 0; }
+
+.menu-button a {
+  font-weight: 300;
+  padding: 0.6em 1.5em 0.6em 0;
+  border-radius: 0.3em 0.3em 0 0;
+  margin: 0 1em 0 0;
+  font-size: 1.2em; }
+  @media screen and (max-width: 480px) {
+    .menu-button a {
+      padding: 0.4em 0.4em 0.4em 0;
+      margin: 0 0.5em 0 0;
+      border-radius: 0.4em 0.4em 0 0; } }
+.menu-button a:hover {
+  text-decoration: underline; }
+.menu-button a:hover > .current-menu-item {
+  text-decoration: none; }
+
+.current-menu-item a {
+  text-decoration: underline; }
+
+.site-description {
+  font-weight: 300;
+  margin: 0;
+  font-size: 1.777em; }
+  @media screen and (max-width: 768px) {
+    .site-description {
+      font-size: 1.536em; } }
+  @media screen and (max-width: 480px) {
+    .site-description {
+      font-size: 1.44em; } }
+
+.main-navigation {
+  border-bottom: 0.15em solid #04080F; }
+
+.projects-project {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 32.2033898305%;
+  margin-bottom: 2em;
+  padding: 0; }
+  .projects-project:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .projects-project {
+      float: left;
+      display: block;
+      margin-right: 2.5641025641%;
+      width: 100%; }
+      .projects-project:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .projects-project {
+      float: left;
+      display: block;
+      margin-right: 5.2631578947%;
+      width: 100%; }
+      .projects-project:last-child {
+        margin-right: 0; } }
+  .projects-project h3 {
+    margin: 0; }
+
+.projects-image {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0 0 0; }
+  .projects-image:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .projects-image {
+      float: left;
+      display: block;
+      margin-right: 2.5641025641%;
+      width: 48.7179487179%;
+      padding: 0.5em 1em 1em 0; }
+      .projects-image:last-child {
+        margin-right: 0; } }
+  .projects-image img {
+    border: 0.1em solid #04080F; }
+
+.project-content {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 74.5762711864%; }
+  .project-content:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .project-content {
+      float: left;
+      display: block;
+      margin-right: 2.5641025641%;
+      width: 100%; }
+      .project-content:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .project-content {
+      float: left;
+      display: block;
+      margin-right: 5.2631578947%;
+      width: 100%; }
+      .project-content:last-child {
+        margin-right: 0; } }
+
+.project-images {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 100%;
+  padding: 1em 1em 1em 0em; }
+  .project-images:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .project-images {
+      padding: 0;
+      margin: 0; } }
+
+.project-image {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 66.1016949153%;
+  margin: 0;
+  padding: 0 0.5em 0 0; }
+  .project-image:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .project-image {
+      float: left;
+      display: block;
+      margin-right: 5.2631578947%;
+      width: 100%; }
+      .project-image:last-child {
+        margin-right: 0; } }
+  .project-image img {
+    border: 0.1em solid #04080F; }
+
+.project-image-thumbs {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 32.2033898305%; }
+  .project-image-thumbs:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .project-image-thumbs {
+      display: none; } }
+  .project-image-thumbs img {
+    border: 0.1em solid #04080F; }
+
+.projects-project-title {
+  text-align: center;
+  font-weight: 300; }
+  @media screen and (max-width: 768px) {
+    .projects-project-title {
+      text-align: left; } }
+
+.project-keywords {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 15.2542372881%;
+  margin-left: 8.4745762712%;
+  border-bottom: 0.1em solid #04080F; }
+  .project-keywords:last-child {
+    margin-right: 0; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #04080F; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 3.157em; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.441em; } }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.074em; } }
+
+h2 {
+  font-size: 2.369em; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.953em; } }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.728em; } }
+
+h3 {
+  font-size: 1.777em; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.536em; } }
+  @media screen and (max-width: 480px) {
+    h3 {
+      font-size: 1.44em; } }
+
+h4 {
+  font-size: 1.333em; }
+  @media screen and (max-width: 768px) {
+    h4 {
+      font-size: 1.25em; } }
+  @media screen and (max-width: 480px) {
+    h4 {
+      font-size: 1.2em; } }
+
+small, .font_small {
+  font-size: 0.707em; }
+
+a {
+  text-decoration: none; }
+
+a, a:visited {
+  color: #04080F; }
+
+.site-header, .site-content, .site-info {
+  max-width: 57.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.6949152542%; }
+  .site-header::after, .site-content::after, .site-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.post-navigation {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 74.5762711864%; }
+  .post-navigation:last-child {
+    margin-right: 0; }
+
+.site-content, .entry-content, p {
+  margin-top: 0; }

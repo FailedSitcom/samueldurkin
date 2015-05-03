@@ -1,0 +1,107 @@
+.projects {
+
+}
+
+.projects-project {
+  @include span-columns(4);
+  margin-bottom: 2em;
+  padding: 0;
+
+
+  @include media($tablet) {
+    @include span-columns(8);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+}
+
+.projects-image {
+  @include span-columns(12);
+
+  padding: 0.5em;
+  margin: 0.5em 0 0 0;
+
+
+  @include media($tablet) {
+    @include span-columns(4);
+    padding: 0.5em 1em 1em 0;
+  }
+
+  img {
+    border: 0.1em solid $black;
+  }
+}
+
+.entry-title {
+
+}
+
+.project-content {
+  @include span-columns(9);
+
+  @include media($tablet) {
+    @include span-columns(8);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+.project-images {
+  @include span-columns(12);
+  padding: 1em 1em 1em 0em;
+
+
+  @include media($tablet) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.project-image {
+  @include span-columns(8);
+  margin: 0;
+  padding: 0 0.5em 0 0;
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  img {
+    border: 0.1em solid $black;
+  }
+}
+
+.project-image-thumbs {
+  @include span-columns(4);
+
+
+  @include media($mobile) {
+    display: none;
+  }
+
+  img {
+    border: 0.1em solid $black;
+  }
+
+}
+
+.projects-project-title {
+  text-align: center;
+  font-weight: 300;
+  @include media($tablet) {
+    text-align: left;
+  }
+}
+
+.project-keywords {
+  @include span-columns(2);
+  @include shift(1);
+  border-bottom: 0.1em solid $black;
+}
