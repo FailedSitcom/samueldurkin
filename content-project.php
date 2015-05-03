@@ -15,6 +15,12 @@
 
 		<div class="project-content">
 
+			<div class="project-website">
+
+				<?php the_field('website') ?>
+
+			</div>
+
 			<?php
 
 				$image_1 = get_field('image_1');
@@ -27,19 +33,19 @@
 
 				<div class="project-image">
 
-					<img src="<?php echo $image_1['url']; ?>" alt="<?php echo $image_1['alt']; ?>" />
+					<img src="<?php echo $image_1['sizes']['project-full']; ?>" alt="<?php echo $image_1['alt']; ?>" />
 
 				</div>
 
 				<div class="project-image-thumbs">
 
-					<img src="<?php echo $image_2['url']; ?>" alt="<?php echo $image_2['alt']; ?>" />
+					<img src="<?php echo $image_2['sizes']['project-thumb']; ?>" alt="<?php echo $image_2['alt']; ?>" />
 
 				</div>
 
 				<div class="project-image-thumbs">
 
-					<img src="<?php echo $image_3['url']; ?>" alt="<?php echo $image_3['alt']; ?>" />
+					<img src="<?php echo $image_3['sizes']['project-thumb']; ?>" alt="<?php echo $image_3['alt']; ?>" />
 
 				</div>
 

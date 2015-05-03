@@ -1,0 +1,7 @@
+.wp-image-27 {
+  margin: 0 0 0.5em 0;
+  border-radius: 0.7em;
+  @include media($mobile) {
+    width: 50%;
+  }
+}

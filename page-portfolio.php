@@ -42,7 +42,13 @@ get_header(); ?>
 
 								<div class="projects-image">
 
-									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+									<img src="<?php echo $image['sizes']['project-full']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+								</div>
+
+								<div class="projects-project-keywords">
+
+									<?php the_field('keywords') ?>
 
 								</div>
 

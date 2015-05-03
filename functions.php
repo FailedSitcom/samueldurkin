@@ -22,6 +22,8 @@ if ( ! function_exists( 'samueldurkin_setup' ) ) :
  */
 function samueldurkin_setup() {
 
+  add_image_size( 'project-full', 480, 320, true);
+	add_image_size( 'project-thumb', 250, 160, true);
 
 	/*
 	 * Make theme available for translation.

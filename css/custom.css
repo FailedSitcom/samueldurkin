@@ -23,7 +23,7 @@ body {
   margin-bottom: 0; }
 
 .menu-button a {
-  font-weight: 300;
+  font-weight: 400;
   padding: 0.6em 1.5em 0.6em 0;
   border-radius: 0.3em 0.3em 0 0;
   margin: 0 1em 0 0;
@@ -35,11 +35,9 @@ body {
       border-radius: 0.4em 0.4em 0 0; } }
 .menu-button a:hover {
   text-decoration: underline; }
-.menu-button a:hover > .current-menu-item {
-  text-decoration: none; }
 
 .current-menu-item a {
-  text-decoration: underline; }
+  font-weight: 300; }
 
 .site-description {
   font-weight: 300;
@@ -55,13 +53,20 @@ body {
 .main-navigation {
   border-bottom: 0.15em solid #04080F; }
 
+.wp-image-27 {
+  margin: 0 0 0.5em 0;
+  border-radius: 0.7em; }
+  @media screen and (max-width: 480px) {
+    .wp-image-27 {
+      width: 50%; } }
+
 .projects-project {
   float: left;
   display: block;
   margin-right: 1.6949152542%;
-  width: 32.2033898305%;
-  margin-bottom: 2em;
-  padding: 0; }
+  width: 49.1525423729%;
+  margin: 0;
+  padding: 1.5em 1em; }
   .projects-project:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -69,7 +74,9 @@ body {
       float: left;
       display: block;
       margin-right: 2.5641025641%;
-      width: 100%; }
+      width: 100%;
+      border-bottom: 0.1em solid #04080F;
+      padding: 0; }
       .projects-project:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
@@ -88,6 +95,7 @@ body {
   display: block;
   margin-right: 1.6949152542%;
   width: 100%;
+  border-left: 0.1em solid #04080F;
   padding: 0.5em;
   margin: 0.5em 0 0 0; }
   .projects-image:last-child {
@@ -97,12 +105,48 @@ body {
       float: left;
       display: block;
       margin-right: 2.5641025641%;
-      width: 48.7179487179%;
-      padding: 0.5em 1em 1em 0; }
+      width: 61.5384615385%;
+      padding: 0.1em 0 0 0;
+      border-left: 0; }
+      .projects-image:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .projects-image {
+      float: left;
+      display: block;
+      margin-right: 5.2631578947%;
+      width: 100%; }
       .projects-image:last-child {
         margin-right: 0; } }
   .projects-image img {
     border: 0.1em solid #04080F; }
+  .projects-image img {
+    border: 0.1em solid #04080F;
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); }
+  .projects-image img:hover {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%); }
+
+.projects-project-keywords {
+  padding: 0.5em;
+  border-left: 0.1em solid #04080F;
+  border-bottom: 0.1em solid #04080F; }
+  @media screen and (max-width: 768px) {
+    .projects-project-keywords {
+      float: left;
+      display: block;
+      margin-right: 2.5641025641%;
+      width: 35.8974358974%;
+      margin: 0.5em 0 0 0;
+      padding: 0.1em 0 3em 0;
+      border-left: 0;
+      border-bottom: 0; }
+      .projects-project-keywords:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .projects-project-keywords {
+      display: none; } }
 
 .project-content {
   float: left;
@@ -128,6 +172,10 @@ body {
       .project-content:last-child {
         margin-right: 0; } }
 
+.project-website {
+  font-size: 1.4em;
+  font-weight: 300; }
+
 .project-images {
   float: left;
   display: block;
@@ -138,7 +186,7 @@ body {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .project-images {
-      padding: 0;
+      padding: 1em 0 0 0;
       margin: 0; } }
 
 .project-image {
@@ -159,7 +207,12 @@ body {
       .project-image:last-child {
         margin-right: 0; } }
   .project-image img {
-    border: 0.1em solid #04080F; }
+    border: 0.1em solid #04080F;
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); }
+  .project-image img:hover {
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%); }
 
 .project-image-thumbs {
   float: left;
@@ -172,14 +225,19 @@ body {
     .project-image-thumbs {
       display: none; } }
   .project-image-thumbs img {
-    border: 0.1em solid #04080F; }
+    border: 0.1em solid #04080F;
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); }
+  .project-image-thumbs img:hover {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%); }
 
 .projects-project-title {
-  text-align: center;
-  font-weight: 300; }
+  text-align: center; }
   @media screen and (max-width: 768px) {
     .projects-project-title {
-      text-align: left; } }
+      text-align: left;
+      padding-top: 2em; } }
 
 .project-keywords {
   float: left;

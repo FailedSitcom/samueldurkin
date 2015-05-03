@@ -9,7 +9,7 @@
 .menu-button {
 
   a {
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.6em 1.5em 0.6em 0;
     border-radius: 0.3em 0.3em 0 0;
     margin: 0 1em 0 0;
@@ -29,15 +29,11 @@
     text-decoration: underline;
   }
 
-  a:hover > .current-menu-item {
-    text-decoration: none;
-  }
-
 }
 
 .current-menu-item a {
 
-    text-decoration: underline;
+    font-weight: 300;
 
 }
 

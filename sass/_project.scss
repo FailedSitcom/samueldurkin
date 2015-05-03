@@ -3,17 +3,22 @@
 }
 
 .projects-project {
-  @include span-columns(4);
-  margin-bottom: 2em;
-  padding: 0;
+  @include span-columns(6);
+  margin: 0;
+  padding: 1.5em 1em;
+
+
 
 
   @include media($tablet) {
     @include span-columns(8);
+    border-bottom: 0.1em solid $black;
+    padding: 0;
   }
 
   @include media($mobile) {
     @include span-columns(4);
+
   }
 
   h3 {
@@ -24,18 +29,54 @@
 
 .projects-image {
   @include span-columns(12);
+  border-left: 0.1em solid $black;
 
   padding: 0.5em;
   margin: 0.5em 0 0 0;
 
 
   @include media($tablet) {
+    @include span-columns(5);
+    padding: 0.1em 0 0 0;
+
+    border-left: 0;
+  }
+
+  @include media($mobile) {
     @include span-columns(4);
-    padding: 0.5em 1em 1em 0;
+
   }
 
   img {
     border: 0.1em solid $black;
+  }
+
+  img {
+    border: 0.1em solid $black;
+    @include filter(grayscale(80%));
+  }
+
+  img:hover {
+    @include filter(grayscale(10%));
+  }
+}
+
+.projects-project-keywords {
+
+  padding: 0.5em;
+  border-left: 0.1em solid $black;
+  border-bottom: 0.1em solid $black;
+
+  @include media($tablet) {
+    @include span-columns(3);
+    margin: 0.5em 0 0 0;
+    padding: 0.1em 0 3em 0;
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  @include media($mobile) {
+    display: none;
   }
 }
 
@@ -55,13 +96,18 @@
   }
 }
 
+.project-website {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
 .project-images {
   @include span-columns(12);
   padding: 1em 1em 1em 0em;
 
 
   @include media($tablet) {
-    padding: 0;
+    padding: 1em 0 0 0;
     margin: 0;
   }
 }
@@ -70,11 +116,17 @@
   @include span-columns(8);
   margin: 0;
   padding: 0 0.5em 0 0;
+
   @include media($mobile) {
     @include span-columns(4);
   }
   img {
     border: 0.1em solid $black;
+    @include filter(grayscale(80%));
+  }
+
+  img:hover{
+    @include filter(grayscale(20%));
   }
 }
 
@@ -88,16 +140,24 @@
 
   img {
     border: 0.1em solid $black;
+    @include filter(grayscale(80%));
+  }
+
+  img:hover {
+    @include filter(grayscale(10%));
   }
 
 }
 
 .projects-project-title {
+
   text-align: center;
-  font-weight: 300;
+
   @include media($tablet) {
     text-align: left;
+    padding-top: 2em;
   }
+
 }
 
 .project-keywords {
