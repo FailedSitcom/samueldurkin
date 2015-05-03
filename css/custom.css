@@ -60,13 +60,22 @@ body {
     .wp-image-27 {
       width: 50%; } }
 
+.projects {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 100%; }
+  .projects:last-child {
+    margin-right: 0; }
+
 .projects-project {
   float: left;
   display: block;
   margin-right: 1.6949152542%;
-  width: 49.1525423729%;
-  margin: 0;
-  padding: 1.5em 1em; }
+  width: 100%;
+  margin: 0 0 3em 0;
+  padding: 0.5em 0 0.5em 0;
+  border-top: 0.1em solid #04080F; }
   .projects-project:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -75,8 +84,7 @@ body {
       display: block;
       margin-right: 2.5641025641%;
       width: 100%;
-      border-bottom: 0.1em solid #04080F;
-      padding: 0; }
+      padding: 0.5em 0 0 0; }
       .projects-project:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
@@ -88,16 +96,16 @@ body {
       .projects-project:last-child {
         margin-right: 0; } }
   .projects-project h3 {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
 
 .projects-image {
   float: left;
   display: block;
   margin-right: 1.6949152542%;
-  width: 100%;
-  border-left: 0.1em solid #04080F;
-  padding: 0.5em;
-  margin: 0.5em 0 0 0; }
+  width: 49.1525423729%;
+  padding: 0.5em 0 0.5em 0;
+  margin: 0em 0 0 0; }
   .projects-image:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -106,8 +114,7 @@ body {
       display: block;
       margin-right: 2.5641025641%;
       width: 61.5384615385%;
-      padding: 0.1em 0 0 0;
-      border-left: 0; }
+      padding: 0.1em 0 0 0; }
       .projects-image:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
@@ -115,7 +122,7 @@ body {
       float: left;
       display: block;
       margin-right: 5.2631578947%;
-      width: 100%; }
+      width: 47.3684210526%; }
       .projects-image:last-child {
         margin-right: 0; } }
   .projects-image img {
@@ -129,9 +136,16 @@ body {
     filter: grayscale(10%); }
 
 .projects-project-keywords {
-  padding: 0.5em;
-  border-left: 0.1em solid #04080F;
+  font-weight: 300;
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 40.6779661017%;
+  padding: 0.5em 0 0 0;
+  margin-left: 1em;
   border-bottom: 0.1em solid #04080F; }
+  .projects-project-keywords:last-child {
+    margin-right: 0; }
   @media screen and (max-width: 768px) {
     .projects-project-keywords {
       float: left;
@@ -139,13 +153,43 @@ body {
       margin-right: 2.5641025641%;
       width: 35.8974358974%;
       margin: 0.5em 0 0 0;
-      padding: 0.1em 0 3em 0;
-      border-left: 0;
-      border-bottom: 0; }
+      padding: 0.1em 0 0em 0; }
       .projects-project-keywords:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .projects-project-keywords {
+      float: left;
+      display: block;
+      margin-right: 5.2631578947%;
+      width: 47.3684210526%;
+      border-bottom: 0;
+      margin: 0;
+      padding: 0; }
+      .projects-project-keywords:last-child {
+        margin-right: 0; } }
+
+.projects-excerpt {
+  float: left;
+  display: block;
+  margin-right: 1.6949152542%;
+  width: 40.6779661017%;
+  padding: 0.5em 0 0 0;
+  margin-left: 1em;
+  border-bottom: 0.1em solid #04080F; }
+  .projects-excerpt:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .projects-excerpt {
+      float: left;
+      display: block;
+      margin-right: 2.5641025641%;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .projects-excerpt:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .projects-excerpt {
       display: none; } }
 
 .project-content {
@@ -232,12 +276,9 @@ body {
     -webkit-filter: grayscale(10%);
     filter: grayscale(10%); }
 
-.projects-project-title {
-  text-align: center; }
-  @media screen and (max-width: 768px) {
-    .projects-project-title {
-      text-align: left;
-      padding-top: 2em; } }
+@media screen and (max-width: 768px) {
+  .projects-project-title {
+    padding-top: 2em; } }
 
 .project-keywords {
   float: left;
