@@ -1,44 +1,46 @@
-.site-header {
-  @include outer-container;
+.site-nav {
+  @include outer-container
 }
 
-.site-description, .site-title {
-  margin-bottom: 0;
+.site-header {
+  @include outer-container;
+  text-align: center;
+  background: url(../img/samuel.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0 0 4em 0;
+
+}
+
+.site-title {
+  font-weight: 700;
+  margin: 4em 0 0 0;
+  color: $yellow;
 }
 
 .menu-button {
-
-  a {
-    font-weight: 400;
-    padding: 0.6em 1.5em 0.6em 0;
-    border-radius: 0.3em 0.3em 0 0;
-    margin: 0 1em 0 0;
-    font-size: 1.2em;
+@include span-columns(4);
+text-align: center;
 
 
-
-    @include media($mobile) {
-      padding: 0.4em 0.4em 0.4em 0;
-      margin: 0 0.5em 0 0;
-      border-radius: 0.4em 0.4em 0 0;
-    }
-
+  a, a:visited {
+    padding: 0.5em 0;
+    font-weight: 700;
+    color: $black;
+    background: $yellow;
+    text-transform: uppercase;
   }
 
   a:hover {
-    text-decoration: underline;
+    background: $dark-green;
   }
-
-}
-
-.current-menu-item a {
-
-    font-weight: 300;
 
 }
 
 .site-description {
-  font-weight: 300;
+  color: $light-green;
   margin: 0;
   font-size: 1.777em;
   @include media($tablet) {
@@ -50,5 +52,6 @@
 }
 
 .main-navigation {
-  border-bottom: 0.15em solid $black;
+
+  background: $black;
 }

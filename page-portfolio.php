@@ -46,22 +46,6 @@ get_header(); ?>
 
 								</div>
 
-								<div class="projects-project-keywords">
-
-									<?php the_field('keywords') ?>
-
-								</div>
-
-								<div class="projects-excerpt">
-
-									<?php the_excerpt(); ?>
-
-								</div>
-
-
-
-
-
 							</a>
 
 						</div>

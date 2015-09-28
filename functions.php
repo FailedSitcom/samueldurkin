@@ -117,12 +117,20 @@ function samueldurkin_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'samueldurkin_scripts' );
 
-function wpb_add_google_fonts() {
-	wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700,400italic');
-  wp_enqueue_style( 'wpb-googleFonts');
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
+   wp_enqueue_script('jquery');
 }
 
-add_action('wp_print_styles', 'wpb_add_google_fonts');
+// Load Font Awesome
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+
+}
 
 /**
  * Implement the Custom Header feature.

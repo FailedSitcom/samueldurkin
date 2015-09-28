@@ -8,7 +8,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -34,6 +34,12 @@
 				<div class="project-image">
 
 					<img src="<?php echo $image_1['sizes']['project-full']; ?>" alt="<?php echo $image_1['alt']; ?>" />
+
+				</div>
+
+				<div class="project-image-thumbs">
+
+					<img src="<?php echo $image_1['sizes']['project-thumb']; ?>" alt="<?php echo $image_1['alt']; ?>" />
 
 				</div>
 

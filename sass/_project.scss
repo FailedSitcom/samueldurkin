@@ -1,131 +1,133 @@
+.about-content, .contact-content  {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include media($tablet) {
+    margin-bottom: 3em;
+
+  }
+}
+
 .projects {
+
   @include span-columns(12);
-}
-
-.projects-project {
-  @include span-columns(12);
-  margin: 0 0 3em 0;
-  padding: 0.5em 0 0.5em 0;
-  border-top: 0.1em solid $black;
-
-
 
   @include media($tablet) {
     @include span-columns(8);
-
-    padding: 0.5em 0 0 0;
-  }
-
-  @include media($mobile) {
-    @include span-columns(4);
+    @include shift(0);
 
   }
 
-  h3 {
-    margin: 0;
+  ul {
+    margin: 2em 0 0 0;
     padding: 0;
   }
 
-}
-
-.projects-image {
-  @include span-columns(6);
-
-
-  padding: 0.5em 0 0.5em 0;
-  margin: 0em 0 0 0;
+  li {
+      list-style: none;
+      @include span-columns(4);
 
 
-  @include media($tablet) {
-    @include span-columns(5);
-    padding: 0.1em 0 0 0;
+      @include media($tablet) {
+        @include span-columns(4);
+      }
+
+      @include media($mobile) {
+        @include span-columns(4);
+
+      }
+
+      .project-tab {
+        background: $dark-green;
+        margin: 1em;
+        padding: 0.3em;
+      }
+
+      h4 {
+        min-height: 3em;
+        background: $dark-green;
+        padding: 0;
+        margin: 0;
+        color: $yellow;
+        text-transform: uppercase;
 
 
-  }
 
-  @include media($mobile) {
-    @include span-columns(2);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-  }
+        font-size: 1.5em;
+        @include media($tablet) {
+          font-size: 1.414em;
+        }
+        @include media($mobile) {
+          font-size: 1.333em;
+        }
 
-  img {
-    border: 0.1em solid $black;
-  }
-
-  img {
-    border: 0.1em solid $black;
-    @include filter(grayscale(80%));
-  }
-
-  img:hover {
-    @include filter(grayscale(10%));
-  }
-}
-
-.projects-project-keywords {
-  font-weight: 300;
-  @include span-columns(5);
-  padding: 0.5em 0 0 0;
-  margin-left: 1em;
-  border-bottom: 0.1em solid $black;
-
-  @include media($tablet) {
-    @include span-columns(3);
-    margin: 0.5em 0 0 0;
-    padding: 0.1em 0 0em 0;
+      }
 
   }
 
-  @include media($mobile) {
-    @include span-columns(2);
-    border-bottom: 0;
+  li:hover h4 {
+
+    color: $black;
+  }
+
+  li:hover img {
+    @include filter(grayscale(0));
+  }
+
+  li img {
+    margin-bottom: -0.3em;
+    width: 100%;
+    padding: 0.5em;
+    @include filter(grayscale(0.9));
+
+    @include media($tablet) {
+      @include filter(grayscale(0));
+    }
+  }
+
+  .entry-title {
     margin: 0;
-    padding: 0;
   }
-}
-
-.projects-excerpt {
-  @include span-columns(5);
-  padding: 0.5em 0 0 0;
-  margin-left: 1em;
-  border-bottom: 0.1em solid $black;
-
-  @include media($tablet) {
-    @include span-columns(8);
-    padding: 0;
-    margin: 0;
-  }
-
-  @include media($mobile) {
-    display: none;
-  }
-}
-
-.entry-title {
 
 }
 
 .project-content {
-  @include span-columns(9);
+  background: $dark-green;
+  color: $black;
+  h4 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @include span-columns(8);
+  @include shift(2);
+  padding: 1em;
+  display: none;
 
   @include media($tablet) {
     @include span-columns(8);
+    @include shift(0);
+    display: none;
   }
 
   @include media($mobile) {
     @include span-columns(4);
+    display: none;
   }
 }
 
 .project-website {
   font-size: 1.4em;
-  font-weight: 300;
 }
 
 .project-images {
   @include span-columns(12);
   padding: 1em 1em 1em 0em;
-
 
   @include media($tablet) {
     padding: 1em 0 0 0;
@@ -133,56 +135,114 @@
   }
 }
 
-.project-image {
-  @include span-columns(8);
+.project-image img {
+  @include span-columns(9);
   margin: 0;
-  padding: 0 0.5em 0 0;
+  padding: 0 0 0 1em;
+
+  @include media($tablet) {
+    @include span-columns(5);
+    padding: 0;
+    margin: 0 0 0.5em 0;
+  }
 
   @include media($mobile) {
-    @include span-columns(4);
+    @include span-columns(6);
   }
+
   img {
     border: 0.1em solid $black;
-    @include filter(grayscale(80%));
+
   }
 
   img:hover{
-    @include filter(grayscale(20%));
+
   }
 }
 
 .project-image-thumbs {
-  @include span-columns(4);
-
-
-  @include media($mobile) {
-    display: none;
-  }
-
-  img {
-    border: 0.1em solid $black;
-    @include filter(grayscale(80%));
-  }
-
-  img:hover {
-    @include filter(grayscale(10%));
-  }
-
-}
-
-.projects-project-title {
-
-
+  @include span-columns(3);
+  padding: 0 0 1em 0;
 
   @include media($tablet) {
+    display: none;
+  }
+}
 
-    padding-top: 2em;
+.project-image-thumb  {
+
+  img {
+  @include span-columns(12);
+  padding: 0;
+  margin: 0 0 0.5em 0;
+  @include filter(opacity(0.6));
+
+  @include media($tablet) {
+    @include span-columns(12);
+  }
+
+  @include media($mobile) {
+    @include span-columns(2);
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+  img:hover {
+    @include filter(opacity(1));
   }
 
 }
 
 .project-keywords {
-  @include span-columns(2);
-  @include shift(1);
-  border-bottom: 0.1em solid $black;
+  @include span-columns(3);
+  text-transform: uppercase;
+
+  @include media($tablet) {
+    display: none;
+  }
+}
+
+.project-description {
+  @include span-columns(9);
+
+  @include media($tablet) {
+    @include span-columns(8);
+  }
+
+}
+
+.back-button {
+  @include span-columns(4);
+  @include shift(3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $black;
+  text-transform: uppercase;
+  min-height: 2em;
+
+
+
+  font-size: 1.5em;
+  @include media($tablet) {
+    @include span-columns(3.5);
+    @include shift(0);
+    font-size: 1.414em;
+  }
+  @include media($mobile) {
+    font-size: 1.333em;
+    @include span-columns(4);
+  }
+
+  a, a:visited {
+    color: $yellow;
+  }
+}
+
+.projects-section .entry-title {
+  margin: 0;
 }

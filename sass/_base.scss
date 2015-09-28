@@ -1,7 +1,7 @@
-body {
-  background: $soft-green;
-}
-
 .entry-title {
-  border-bottom: 0.075em solid $black;
+  text-align: center;
+  background: $black;
+  color: $yellow;
+  margin: 0 0 0.707em 0;
+  padding: 0.303em 0;
 }

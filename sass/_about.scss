@@ -1,7 +1,29 @@
-.wp-image-27 {
-  margin: 0 0 0.5em 0;
+.about-content, .contact-content {
+  @include span-columns(8);
+  @include shift(2);
+
+  @include media($tablet) {
+    @include span-columns(8);
+    @include shift(0);
+    padding: 0 1em;
+  }
+}
+
+.samuel-profile {
+  display: inline;
+
+  @include span-columns(4);
+  float: right;
+  margin: 0 0 0.5em 0.5em;
   border-radius: 0.7em;
+
+  @include media($tablet) {
+    @include span-columns(3);
+    float: right;
+  }
   @include media($mobile) {
-    width: 50%;
+    @include span-columns(2);
+    float: right;
+
   }
 }
